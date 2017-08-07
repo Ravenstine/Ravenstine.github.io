@@ -9,4 +9,5 @@ if (!Array.from) Array.from = require('array-from');
 require('./media.js');
 require('./wells.js');
 require('./mast.js');
-require('svgxuse'); 
+require('svgxuse');
+

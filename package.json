@@ -1,7 +1,7 @@
 {
-  "name": "scpr-style-guide",
+  "name": "kpcc-design-system",
   "version": "4.0.0",
-  "description": "Product Style Guide for KPCC (Southern California Public Radio).",
+  "description": "Product Design System for KPCC (Southern California Public Radio).",
   "main": "src/scripts/index.js",
   "scripts": {
     "clean": "node_modules/gulp/bin/gulp.js clean",
@@ -18,18 +18,20 @@
     "copy-img": "node_modules/gulp/bin/gulp.js build:doc:sprite",
     "lint": "scss-lint -c t .scss-lint.yml",
     "svg": "node_modules/gulp/bin/gulp.js build:sprite",
-    "test": "npm run test"
+    "test": "npm run test",
+    "prepack": "npm run build",
+    "serve": "node_modules/gulp/bin/gulp.js serve"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SCPR/scpr-style-guide.git"
+    "url": "git+https://github.com/SCPR/kpcc-design-system.git"
   },
   "author": "Southern California Public Radio",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/SCPR/scpr-style-guide/issues"
+    "url": "https://github.com/SCPR/kpcc-design-system/issues"
   },
-  "homepage": "https://github.com/SCPR/scpr-style-guide#readme",
+  "homepage": "https://github.com/SCPR/kpcc-design-system#readme",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "babel-preset-es2015": "^6.18.0",
@@ -59,7 +61,6 @@
     "svgxuse": "^1.1.23"
   },
   "dependencies": {
-    "gulp-replace": "^0.5.4",
-    "gulp-svg-sprite": "^1.3.6"
+
   }
 }

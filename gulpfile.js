@@ -24,15 +24,15 @@ gulp.task('build:sass', () => {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(rename('scpr-style.css'))
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./dist/styles'))
     .pipe(browserSync.stream());
 });
 
 gulp.task('compile:css', () => {
-  return gulp.src('./public/css/scpr-style.css')
+  return gulp.src('./dist/styles/scpr-style.css')
     .pipe(cleanCSS({compatibility: 'ie11'}))
     .pipe(rename('scpr-style-min.css'))
-    .pipe(gulp.dest('./public/css'))
+    .pipe(gulp.dest('./dist/styles'))
 });
 
 gulp.task('build:js', () => {
@@ -43,19 +43,19 @@ gulp.task('build:js', () => {
     .bundle()
     .pipe(source('index.js'))
     .pipe(rename('scpr-style.js'))
-    .pipe(gulp.dest('./public/js'))
+    .pipe(gulp.dest('./dist/scripts'))
 });
 
 gulp.task('compile:js', () => {
-  return gulp.src('./public/js/scpr-style.js')
+  return gulp.src('./dist/scripts/scpr-style.js')
     .pipe(uglify())
     .pipe(rename('scpr-style-min.js'))
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./dist/scripts'));
 });
 
 gulp.task('copy:images', () => {
   return gulp.src('./src/images/*')
-    .pipe(gulp.dest('./public/img'));
+    .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('build:sprite', () => {
@@ -68,69 +68,33 @@ gulp.task('build:sprite', () => {
         }
       }
     }))
-    .pipe(replace('<?xml version="1.0" encoding="utf-8"?>', ''))
-    .pipe(gulp.dest('./public/img'))
+    .pipe(replace('<?xml version="1.0" encoding="utf-8"?>', '')) // this was causing problems in some browsers
+    .pipe(gulp.dest('./dist/images'))
 });
 
 gulp.task('clean', () => {
-  // return del(['./build/**/*', '!./build/.git/']);
-  return del(['./public/**/*']);
-});
-
-//// DOCUMENTATION
-
-gulp.task('build:doc:sass', () => {
-  return gulp.src('./src/styles/documentation.sass')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('./documentation'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('build:doc:js', () => {
-  return browserify('./src/scripts/documentation.js', {debug: true, extensions: ['.js']})
-    // .transform('browserify-shim')
-    .transform('brfs')
-    .transform('babelify', {presets: ['es2015']})
-    .bundle()
-    .pipe(source('documentation.js'))
-    .pipe(gulp.dest('./documentation'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('build:doc:sprite', () => {
-  return gulp.src('./src/images/**/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        symbol: {
-          dest: '',
-          sprite: 'scpr-sprite.svg'
-        }
-      }
-    }))
-    .pipe(replace('<?xml version="1.0" encoding="utf-8"?>', ''))
-    .pipe(gulp.dest('./documentation'))
+  return del(['./dist/**/*']);
 });
 
 
 //// MASTER TASKS
 
-gulp.task('build:doc', ['build:doc:sass', 'build:doc:js', 'build:doc:sprite']);
-
 gulp.task('compile', (cb) => {
   return runSequence('clean', 'build:sass', 'compile:css', 'build:js', 'compile:js', 'copy:images', 'build:sprite', cb);
 });
 
-gulp.task('serve', ['build:doc:sass', 'build:doc:js', 'build:doc:sprite'], () => {
+
+//// SERVE DOCUMENTATION
+gulp.task('serve', ['build:sass', 'build:js', 'build:sprite'], () => {
   browserSync.init({
-    server: "./documentation"
+    server: "./"
   });
-  gulp.watch(['./src/styles/**/*.sass', './src/styles/**/*.scss'], ['build:doc:sass']);
-  gulp.watch('./src/scripts/*.js', ['build:doc:js']);
+  gulp.watch(['./src/styles/**/*.sass', './src/styles/**/*.scss'], ['build:sass']);
+  gulp.watch('./src/scripts/*.js', ['build:js']);
   gulp.watch('./src/images/*.svg').on('change', browserSync.reload);
-  gulp.watch('./documentation/index.html').on('change', browserSync.reload);
+  gulp.watch('./documentation/*').on('change', browserSync.reload);
+  gulp.watch('./index.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);
-
 

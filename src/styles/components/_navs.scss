@@ -8,11 +8,13 @@
   display: inline-block;
   list-style: none;
   margin: 0;
+  width: 100%;
 }
 
 .c-nav__item {
   display: inline-block;
   vertical-align: middle;
+  width: 100%;
 
   &--hover-highlight:hover {
     box-shadow: inset 0 -4px 0 0 $color-primary;
@@ -21,10 +23,6 @@
 }
 
 .c-nav__link {
-
-  // @include media-max($media-desktop) {
-  //   padding: 1rem 0.3rem;
-  // }
 
   @include media-max($media-tablet) {
     margin-bottom: 0.3125rem * 2;
@@ -39,10 +37,6 @@
   padding: 1rem ($base-line-height / 2);
   text-decoration: none;
   text-transform: uppercase;
-
-  // @include media-max($media-tablet) {
-  //   padding: 1rem ($base-line-height / 5);
-  // }
 
   &:active {
     color: $color-black;

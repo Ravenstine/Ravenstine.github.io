@@ -1,19 +1,21 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="documentation.css">
+    <link rel="stylesheet" type="text/css" href="/dist/styles/scpr-style.css">
+    <link rel="stylesheet" type="text/css" href="/documentation/documentation.css">
     <script src="https://use.typekit.net/cka2qre.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <header>
-      <h1>KPCC Design System</h1>
+      
     </header>
 
     <main>
 
+      <h1><svg class="o-footer__logo b-icon--left"><use class="" xlink:href="/dist/images/scpr-sprite.svg#logo_kpcc-black"/></svg> Design System</h1>
 
       <section id="base">
-        <h2>Base</h2>
+        <h2 class="b-heading--bold">Base</h2>
 
         <h3>Headings - Default</h3>
         <hr>   
@@ -70,7 +72,7 @@
         <xmp>
           <a href="#">
             <svg class="b-icon b-icon--size-med b-icon--left">
-              <use class="b-icon--line b-icon--color-link" xlink:href="scpr-sprite.svg#icon_line-article"/>
+              <use class="b-icon--line b-icon--color-link" xlink:href="/dist/images/scpr-sprite.svg#icon_line-article"/>
             </svg>
             <span class="b-link b-link--callout">I am a callout link</span>
           </a>      
@@ -113,7 +115,7 @@
 
       <section id="layout">
 
-        <h2>Layout</h2>
+        <h2 class="b-heading--bold">Layout</h2>
 
         <h3>Container - Small</h3>
         <hr>
@@ -140,434 +142,12 @@
           <div class="l-container l-container--xl">I am an extra large container</div>
         </xmp>
 
-        <h3>Row - Default</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container--xl">
-            <div class="l-row">
-              <div class="l-col l-col--sm-4">
-                This is
-              </div>
-              <div class="l-col l-col--sm-4">
-                a default
-              </div>
-              <div class="l-col l-col--sm-4">
-                grid row.
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Align Start</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-start">
-              <div class="l-col l-col--sm-6">
-                start
-              </div>
-            </div>
-          </div>
-        </xmp> 
-
-        <h3>Row - Align Center</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-center">
-              <div class="l-col l-col--sm-6">
-                center
-              </div>
-            </div>
-          </div>
-        </xmp> 
-
-        <h3>Row - Align End</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-end">
-              <div class="l-col l-col--sm-6">
-                end
-              </div>
-            </div>
-          </div>
-        </xmp> 
-
-        <h3>Row - Align Top</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-top">
-              <div class="l-col l-col--sm-6">
-                top
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Align Middle</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-middle">
-              <div class="l-col l-col--sm-6">
-                middle
-              </div>
-            </div>
-          </div>
-        </xmp> 
-
-        <h3>Row - Align Bottom</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-bottom">
-              <div class="l-col l-col--sm-6">
-                bottom
-              </div>
-            </div>
-          </div>
-        </xmp> 
-
-        <h3>Row - Space Around</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-around">
-              <div class="l-col l-col--sm-2">
-                  around
-              </div>
-              <div class="l-col l-col--sm-2">
-                  around
-              </div>
-              <div class="l-col l-col--sm-2">
-                  around
-              </div>
-              <div class="l-col l-col--sm-2">
-                  around
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Space Between</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-between">
-              <div class="l-col l-col--sm-2">
-                  between
-              </div>
-              <div class="l-col l-col--sm-2">
-                  between
-              </div>
-              <div class="l-col l-col--sm-2">
-                  between
-              </div>
-              <div class="l-col l-col--sm-2">
-                  between
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Vertical</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-vertical" style="height: 10em;">
-              <div class="l-col l-col--sm-2">
-                  look
-              </div>
-              <div class="l-col l-col--sm-2">
-                  just
-              </div>
-              <div class="l-col l-col--sm-2">
-                  ma
-              </div>
-              <div class="l-col l-col--sm-2">
-                  one row
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Reverse</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-reverse">
-              <div class="l-col l-col--sm-2">
-                1
-              </div>
-              <div class="l-col l-col--sm-2">
-                2
-              </div>
-              <div class="l-col l-col--sm-2">
-                3
-              </div>
-              <div class="l-col l-col--sm-2">
-                4
-              </div>
-              <div class="l-col l-col--sm-2">
-                5
-              </div>
-              <div class="l-col l-col--sm-2">
-                6
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Wrap Reverse</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-wrap-reverse">
-              <div class="l-col l-col--sm-12">
-                one
-              </div>
-              <div class="l-col l-col--sm-12">
-                two
-              </div>
-              <div class="l-col l-col--sm-12">
-                three
-              </div>
-              <div class="l-col l-col--sm-12">
-                four
-              </div>
-              <div class="l-col l-col--sm-12">
-                five
-              </div>
-              <div class="l-col l-col--sm-12">
-                six
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - No Wrap</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-nowrap">
-              <div class="l-col l-col--sm-12">
-                This
-              </div>
-              <div class="l-col l-col--sm-12">
-                should
-              </div>
-              <div class="l-col l-col--sm-12">
-                all
-              </div>
-              <div class="l-col l-col--sm-12">
-                be
-              </div>
-              <div class="l-col l-col--sm-12">
-                on
-              </div>
-              <div class="l-col l-col--sm-12">
-                one
-              </div>
-              <div class="l-col l-col--sm-12">
-                line
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Row - Noflex</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row l-row--sm-noflex">
-              <div class="l-col l-col--sm-3">
-                no flex
-              </div>
-              <div class="l-col l-col--sm-3">
-                to be
-              </div>
-              <div class="l-col l-col--sm-3">
-                found here
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Column</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container--xl">
-            <div class="l-row">
-              <div class="l-col l-col--sm-12">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-1">
-                column
-              </div>
-              <div class="l-col l-col--sm-11">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-2">
-                column
-              </div>
-              <div class="l-col l-col--sm-10">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-3">
-                column
-              </div>
-              <div class="l-col l-col--sm-9">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-4">
-                column
-              </div>
-              <div class="l-col l-col--sm-8">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-5">
-                column
-              </div>
-              <div class="l-col l-col--sm-7">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-6">
-                column
-              </div>
-              <div class="l-col l-col--sm-6">
-                column
-              </div>
-            </div>
-            <div class="l-row">
-              <div class="l-col l-col--sm-2">
-                column
-              </div>
-              <div class="l-col l-col--sm-6">
-                column
-              </div>
-              <div class="l-col l-col--sm-4">
-                column
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Column - First</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row">
-              <div class="l-col l-col--sm-2">
-                1
-              </div>
-              <div class="l-col l-col--sm-2">
-                2
-              </div>
-              <div class="l-col l-col--sm-2">
-                3
-              </div>
-              <div class="l-col l-col--sm-2">
-                4
-              </div>
-              <div class="l-col l-col--sm-2">
-                5
-              </div>
-              <div class="l-col l-col--sm-2 l-col--sm-first">
-                6
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Column - Last</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row">
-              <div class="l-col l-col--sm-2 l-col--sm-last">
-                1
-              </div>
-              <div class="l-col l-col--sm-2">
-                2
-              </div>
-              <div class="l-col l-col--sm-2">
-                3
-              </div>
-              <div class="l-col l-col--sm-2">
-                4
-              </div>
-              <div class="l-col l-col--sm-2">
-                5
-              </div>
-              <div class="l-col l-col--sm-2">
-                6
-              </div>
-            </div>
-          </div>
-        </xmp>
-
-        <h3>Column - Offset</h3>
-        <hr>
-        <xmp>
-          <div class="l-container l-container-xl">
-            <div class="l-row">
-              <div class="l-col l-col--sm-1 l-col--sm-offset-11">
-                offset11
-              </div>
-              <div class="l-col l-col--sm-2 l-col--sm-offset-10">
-                offset10
-              </div>
-              <div class="l-col l-col--sm-3 l-col--sm-offset-9">
-                offset9
-              </div>
-              <div class="l-col l-col--sm-4 l-col--sm-offset-8">
-                offset8
-              </div>
-              <div class="l-col l-col--sm-5 l-col--sm-offset-7">
-                offset7
-              </div>
-              <div class="l-col l-col--sm-6 l-col--sm-offset-6">
-                offset6
-              </div>
-              <div class="l-col l-col--sm-7 l-col--sm-offset-5">
-                offset5
-              </div>
-              <div class="l-col l-col--sm-8 l-col--sm-offset-4">
-                offset4
-              </div>
-              <div class="l-col l-col--sm-9 l-col--sm-offset-3">
-                offset3
-              </div>
-              <div class="l-col l-col--sm-10 l-col--sm-offset-2">
-                offset2
-              </div>
-              <div class="l-col l-col--sm-11 l-col--sm-offset-1">
-                offset1
-              </div>
-            </div>
-          </div>
-        </xmp>
-
       </section>
 
 
       <section id="components">
 
-        <h2>Components</h2>
+        <h2 class="b-heading--bold">Components</h2>
 
         <h3>Buttons - Default</h3>
         <hr>
@@ -650,6 +230,17 @@
             <li>List Item 3</li>
             <li>List Item 4</li>
           </ul>
+        </xmp>
+
+        <h3>Nav</h3>
+        <description>
+          A simple nav menu with hover effects.
+        </description>
+        <hr>
+        <xmp>
+          <nav class="c-nav">
+            <li class="c-nav__item c-nav__item--hover-highlight c-nav__link">Item 1</li>
+          </nav>
         </xmp>
 
         <h3>Text Input - Default</h3>
@@ -760,7 +351,7 @@
             <p>This is a dismissible well.</p>
             <button class="c-well__dismiss-btn js-well--dismiss-btn">
               <svg class="b-icon b-icon--size-med">
-                <use class="b-icon--line b-icon--color-gray " xlink:href="scpr-sprite.svg#icon_line-close"/>
+                <use class="b-icon--line b-icon--color-gray " xlink:href="/dist/images/scpr-sprite.svg#icon_line-close"/>
               </svg>
             </button>
             </span>
@@ -772,7 +363,7 @@
 
       <section id="objects">
 
-        <h2>Objects</h2>
+        <h2 class="b-heading--bold">Objects</h2>
 
         <h3>Figure - Widescreen</h3>
         <description>
@@ -855,7 +446,7 @@
               <div class="o-media__meta">
                 <span class="o-media__label">
                   <svg class="b-icon b-icon--size-sm b-icon--left">
-                    <use class="b-icon--line b-icon--color-primary" xlink:href="scpr-sprite.svg#icon_line-audio"/>
+                    <use class="b-icon--line b-icon--color-primary" xlink:href="/dist/images/scpr-sprite.svg#icon_line-audio"/>
                   </svg>
                   Audio
                 </span>
@@ -881,7 +472,7 @@
               <div class="o-media__meta">
                 <span class="o-media__label">
                   <svg class="b-icon b-icon--size-sm b-icon--left">
-                    <use class="b-icon--line b-icon--color-primary" xlink:href="scpr-sprite.svg#icon_line-audio"/>
+                    <use class="b-icon--line b-icon--color-primary" xlink:href="/dist/images/scpr-sprite.svg#icon_line-audio"/>
                   </svg>
                   Audio
                 </span>
@@ -922,7 +513,7 @@
               <div class="o-media__meta">
                 <span class="o-media__label">
                   <svg class="b-icon b-icon--size-sm b-icon--left">
-                    <use class="b-icon--line b-icon--color-primary" xlink:href="scpr-sprite.svg#icon_line-audio"/>
+                    <use class="b-icon--line b-icon--color-primary" xlink:href="/dist/images/scpr-sprite.svg#icon_line-audio"/>
                   </svg>
                   Audio
                 </span>
@@ -980,7 +571,7 @@
               <div class="o-media__meta">
                 <span class="o-media__label">
                   <svg class="b-icon b-icon--size-sm b-icon--right">
-                    <use class="b-icon--line b-icon--color-gray" xlink:href="scpr-sprite.svg#icon_line-outbound-link"/>
+                    <use class="b-icon--line b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#icon_line-outbound-link"/>
                   </svg>
                 </span>
               </div>
@@ -1048,7 +639,7 @@
             <div class="o-mast__logo">
               <a href="/" class="o-mast__logo-link">
                 <svg>
-                  <use class="" xlink:href="scpr-sprite.svg#logo_kpcc-black"/>
+                  <use class="" xlink:href="/dist/images/scpr-sprite.svg#logo_kpcc-black"/>
                 </svg>
               </a>
             </div>
@@ -1059,7 +650,7 @@
                 <li class="o-mast__action o-mast__menu">
                   <label class="o-mast__menu-toggler" for="o-mast__menu-toggler-checkbox">
                     <svg class="b-icon b-icon--size-sm o-mast__menu-b-icon--opened">
-                      <use class="b-icon--line  b-icon--color-gray " xlink:href="scpr-sprite.svg#icon_line-close"/>
+                      <use class="b-icon--line  b-icon--color-gray " xlink:href="/dist/images/scpr-sprite.svg#icon_line-close"/>
                     </svg>
                     <span class="o-mast__item-caption o-mast__menu-toggler-caption o-mast__item-caption o-mast__menu-toggler-caption--opened">Close</span>
                   </label>
@@ -1277,7 +868,7 @@
                 <input type="text" placeholder="Enter your search here" name="q" id="q" />
                 <label for="o-mast__search-toggler-checkbox" class="o-mast__search-link" href="#">
                   <svg class="b-icon b-icon--search-open">
-                    <use class="b-icon--line b-icon--color-gray" xlink:href="scpr-sprite.svg#icon_line-search"/>
+                    <use class="b-icon--line b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#icon_line-search"/>
                   </svg>
                 </label>
               </form>
@@ -1287,7 +878,7 @@
             <div class="o-mast__action o-mast__donate">
               <a class="o-mast__donate-link" href="#">
                 <svg class="b-icon b-icon--size-med b-icon--left">
-                  <use class="b-icon--line b-icon--color-link" xlink:href="scpr-sprite.svg#icon_line-donate"/>
+                  <use class="b-icon--line b-icon--color-link" xlink:href="/dist/images/scpr-sprite.svg#icon_line-donate"/>
                 </svg>
                 <span class="o-mast__item-caption">Donate</span>
               </a>
@@ -1299,11 +890,11 @@
             <div class="o-mast__action o-mast__menu">
               <label class="o-mast__menu-toggler" for="o-mast__menu-toggler-checkbox">
                 <svg class="b-icon b-icon--size-lg o-mast__menu-icon--closed">
-                  <use class="b-icon--line  b-icon--color-gray-dark " xlink:href="scpr-sprite.svg#icon_line-menu"/>
+                  <use class="b-icon--line  b-icon--color-gray-dark " xlink:href="/dist/images/scpr-sprite.svg#icon_line-menu"/>
                 </svg>
                 <span class="o-mast__item-caption o-mast__menu-toggler-caption o-mast__item-caption o-mast__menu-toggler-caption--closed">Menu</span>
                 <svg class="b-icon b-icon--size-sm o-mast__menu-icon--opened">
-                  <use class="b-icon--line  b-icon--color-gray-dark " xlink:href="scpr-sprite.svg#icon_line-close"/>
+                  <use class="b-icon--line  b-icon--color-gray-dark " xlink:href="/dist/images/scpr-sprite.svg#icon_line-close"/>
                 </svg>
                 <span class="o-mast__item-caption o-mast__menu-toggler-caption o-mast__item-caption o-mast__menu-toggler-caption--opened">Close</span>
               </label>
@@ -1319,108 +910,100 @@
         <hr>
         <xmp>
           <footer class="o-footer">
-            <div class="l-section--margin-sm l-row l-row--lg l-between l-bottom">
-              <div class="l-col l-center@media-desktop">
+            <div class="l-section--margin-sm">
+              <div class="l-center@media-desktop">
                 <a href="/">
                   <svg class="o-footer__logo b-icon--left">
-                    <use class="" xlink:href="scpr-sprite.svg#logo_kpcc-white"/>
+                    <use class="" xlink:href="/dist/images/scpr-sprite.svg#logo_kpcc-white"/>
                   </svg>
                 </a>
                 <span class="o-footer__tagline text text--semibold u-text-color--gray">The Voice of Southern California</span>
               </div>
-              <div class="l-col l-end l-center@media-desktop">
-                <a href="https://scprcontribute.scpr.org/">
-                  <svg class="b-icon b-icon--size-med b-icon--left">
-                    <use class="b-icon--line b-icon--color-white" xlink:href="scpr-sprite.svg#icon_line-donate"/>
-                  </svg>
-                  <span class="link link--white-dark-bg text">Support the voices you trust. <b class="text--semibold">Donate&nbsp;now.</b></span>
-                </a>
-              </div>
+              <a href="https://scprcontribute.scpr.org/">
+                <svg class="b-icon b-icon--size-med b-icon--left">
+                  <use class="b-icon--line b-icon--color-white" xlink:href="/dist/images/scpr-sprite.svg#icon_line-donate"/>
+                </svg>
+                <span class="link link--white-dark-bg text">Support the voices you trust. <b class="text--semibold">Donate&nbsp;now.</b></span>
+              </a>
             </div>
             <hr class="b-rule b-rule--primary" />
             <nav class="o-footer__nav o-footer__nav--expanded u-text-align--center">
-              <div class="l-section--margin-sm">
-                <ul class="c-list--horiz c-list--divider b-text b-text--bold">
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Local</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">US & World</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Arts & Entertainment</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Crime & Justice</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Science</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Politics</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Health</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Business</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Education</a></li>
-                </ul>
-              </div>
-              <div class="l-section--margin-sm">
-                <ul class="c-list--horiz b-text">
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Take Two</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">AirTalk</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Off-Ramp</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">The Frame</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Program Schedule</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Programs A-Z</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">KPCC In Person</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">About KPCC</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Contact Us</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Staff Directory</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Careers</a></li>
-                </ul>
-              </div>
+              <ul class="l-section--margin-sm c-list--horiz c-list--divider b-text b-text--bold">
+                <li><a class="b-link b-link--white-dark-bg" href="#">Local</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">US & World</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Arts & Entertainment</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Crime & Justice</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Science</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Politics</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Health</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Business</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Education</a></li>
+              </ul>
+              <ul class="l-section--margin-sm c-list--horiz b-text">
+                <li><a class="b-link b-link--white-dark-bg" href="#">Take Two</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">AirTalk</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Off-Ramp</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">The Frame</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Program Schedule</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Programs A-Z</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">KPCC In Person</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">About KPCC</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Contact Us</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Staff Directory</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Careers</a></li>
+              </ul>
             </nav>
             <nav class="o-footer__nav o-footer__nav--compact u-text-align--center">
-              <div class="l-section--margin-sm">
-                <ul class="c-list--horiz c-list--divider b-text b-text--bold">
-                  <li><a class="b-link b-link--white-dark-bg" href="#">News</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Programs</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Events</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">Support</a></li>
-                  <li><a class="b-link b-link--white-dark-bg" href="#">About</a></li>
-                </ul>
-              </div>
+              <ul class="l-section--margin-sm c-list--horiz c-list--divider b-text b-text--bold">
+                <li><a class="b-link b-link--white-dark-bg" href="#">News</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Programs</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Events</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">Support</a></li>
+                <li><a class="b-link b-link--white-dark-bg" href="#">About</a></li>
+              </ul>
             </nav>
-            <div class="l-section--margin-sm l-row l-row--xl l-between l-bottom">
-              <div class="l-col l-center@media-wide">
+            <div class="l-section--margin-sm">
+              <div class="l-center@media-wide">
                 <ul class="c-list--horiz c-list--horiz-compact">
                   <li class="o-footer__partner-label"><span class="u-text-color--gray b-text b-text--uppercase b-text--semibold">Our Partners</span></li>
                   <li>
                     <svg width="106" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-apm"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-apm"/>
                     </svg>
                   </li>
                   <li class="o-footer__partner">
                     <svg width="62" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-npr"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-npr"/>
                     </svg>
                   </li>
                   <li class="o-footer__partner">
                     <svg width="71" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-bbc"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-bbc"/>
                     </svg>
                   </li>
                   <li class="o-footer__partner">
                     <svg width="86" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-pri"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-pri"/>
                     </svg>
                   </li>
                   <li class="o-footer__partner">
                     <svg width="28" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-nbc4"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-nbc4"/>
                     </svg>
                   </li>
                   <li class="o-footer__partner">
                     <svg width="57" class="o-footer__partner-logo b-icon b-icon--left">
-                      <use class="b-icon--fill b-icon--color-gray" xlink:href="scpr-sprite.svg#logo_partner-pcc"/>
+                      <use class="b-icon--fill b-icon--color-gray" xlink:href="/dist/images/scpr-sprite.svg#logo_partner-pcc"/>
                     </svg>
                   </li>
                 </ul>
               </div>
-              <nav class="l-col l-end l-center@media-wide">
-                <ul class="c-list--horiz b-text b-text--small u-text-color--gray">
+              <nav class="l-center@media-wide">
+                <ul class="l-center@media-wide c-list--horiz b-text b-text--small u-text-color--gray">
                   <li><a class="b-link b-link--gray-dark-bg" href="/terms/">Terms &amp; Conditions</a></li>
                   <li><a class="b-link b-link--gray-dark-bg" href="/privacy/">Privacy</a></li>
                   <li><a class="b-link b-link--gray-dark-bg" href="/web_site_feedback/">Feedback</a></li>
-                  <li>&copy; 2016 Southern California Public Radio</li>
+                  <li>&copy; 2017 Southern California Public Radio</li>
                 </ul>
               </nav>
             </div>
@@ -1431,12 +1014,9 @@
 
     </main>
 
-    <script src="documentation.js"></script>
+    <script src="/documentation/documentation.js"></script>
+    <script src="/dist/scripts/scpr-style.js"></script>
 
   </body>
 </html>
-
-
-
-
 

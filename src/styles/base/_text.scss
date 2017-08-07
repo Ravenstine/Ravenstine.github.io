@@ -62,14 +62,14 @@
 }
 
 
-@each $breakpoint, $breakpoint-size in $grid-breakpoints {
-  @include media-min($breakpoint-size) {
-    $max-columns: 12;
-    @for $i from 2 through $max-columns {
-      .b-text-columns--#{$breakpoint}-#{$i} {
-        column-count: $i;
-        column-gap: $gutter;
-      }
-    }
-  }
-}
+// @each $breakpoint, $breakpoint-size in $grid-breakpoints {
+//   @include media-min($breakpoint-size) {
+//     $max-columns: 12;
+//     @for $i from 2 through $max-columns {
+//       .b-text-columns--#{$breakpoint}-#{$i} {
+//         column-count: $i;
+//         column-gap: $gutter;
+//       }
+//     }
+//   }
+// }

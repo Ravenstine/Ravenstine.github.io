@@ -72,8 +72,7 @@ $col-in-rems:      4.5rem;
 $gutter:           3.1674208%;        // 1326 (max xl container width) / 42 (max gutter width) = 3.1674208%
 $gutter-in-rems:   2.625rem;          // 42 (max gutter width) / 16 (1 rem) = 2.625
 $gutter-in-pixels: 42px;
-$grid-columns:     12;
-$grid-breakpoints: (sm: 0, med: $media-tablet, lg: $media-desktop, xl: $media-wide);
 $margin:           4.29864251%;
 $margin-in-pixels: 57px;
 $margin-in-rems:   3.5625rem;
+
