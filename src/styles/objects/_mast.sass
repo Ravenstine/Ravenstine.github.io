@@ -327,23 +327,30 @@ $o-mast-logo-mobile-width: 107px
       display: none
 
 @mixin o-mast--sm
-  justify-content: space-between
+  display: block
+  // justify-content: space-between
   // flex-direction: column
   padding-left: 0px
   align-items: center
   height: 50px
   .o-mast__logo
+    box-sizing: border-box
     left: 50%
+    height: 100%
     order: 1
     position: absolute
     transform: translateX(-50%)
     z-index: 5
+    > a
+      margin: 0 auto
   .o-mast__caption
     display: none
   .o-mast__item-caption
     display: none
   .o-mast__search
     order: 2
+    position: absolute
+    right: 0
     z-index: 5
   .o-mast__donate
     display: none
@@ -351,6 +358,9 @@ $o-mast-logo-mobile-width: 107px
     display: none
   .o-mast__menu
     order: 0
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
     z-index: 5
   .o-mast__sections
     padding: 0

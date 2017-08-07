@@ -1245,16 +1245,16 @@ button {
       display: none; } }
   @media (max-width: 896px) {
     .o-mast--mobile {
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      display: block;
       padding-left: 0px;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
       height: 50px; }
       .o-mast--mobile .o-mast__logo {
+        box-sizing: border-box;
         left: 50%;
+        height: 100%;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1;
@@ -1262,6 +1262,8 @@ button {
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%);
         z-index: 5; }
+        .o-mast--mobile .o-mast__logo > a {
+          margin: 0 auto; }
       .o-mast--mobile .o-mast__caption {
         display: none; }
       .o-mast--mobile .o-mast__item-caption {
@@ -1270,6 +1272,8 @@ button {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
+        position: absolute;
+        right: 0;
         z-index: 5; }
       .o-mast--mobile .o-mast__donate {
         display: none; }
@@ -1279,6 +1283,10 @@ button {
         -webkit-box-ordinal-group: 1;
             -ms-flex-order: 0;
                 order: 0;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
         z-index: 5; }
       .o-mast--mobile .o-mast__sections {
         padding: 0;
@@ -1318,9 +1326,7 @@ button {
 
 .o-mast--sm {
   padding-left: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: block;
   padding-left: 0px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1439,7 +1445,9 @@ button {
     .o-mast--sm > .o-mast__action .o-mast__item-caption {
       display: none; } }
   .o-mast--sm .o-mast__logo {
+    box-sizing: border-box;
     left: 50%;
+    height: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -1447,6 +1455,8 @@ button {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 5; }
+    .o-mast--sm .o-mast__logo > a {
+      margin: 0 auto; }
   .o-mast--sm .o-mast__caption {
     display: none; }
   .o-mast--sm .o-mast__item-caption {
@@ -1455,6 +1465,8 @@ button {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    position: absolute;
+    right: 0;
     z-index: 5; }
   .o-mast--sm .o-mast__donate {
     display: none; }
@@ -1464,6 +1476,10 @@ button {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     z-index: 5; }
   .o-mast--sm .o-mast__sections {
     padding: 0;
