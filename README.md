@@ -4,6 +4,8 @@
 KPCC Design System
 ==================
 
+**NOTE:** This is a migration of the [scpr-style-guide](https://github.com/scpr/scpr-style-guide) along with the latest set of changes.  It's a WIP so there is a lot of incorrect information in this readme.
+
 This repository houses kpcc-design-system, a shared style library for KPCC web products. Major HT to the [US Web Design Standards](https://github.com/18F/web-design-standards) project and their [cg-style](https://github.com/18F/cg-style) project; the code and structure for KPCC's design system are based in large part on their work.
 
 The kpcc-design-system provides the assets (CSS, SCSS, JS, images and font declarations) to design KPCC-branded, consumer-facing, editorial websites. This allows multiple sites, built in separate repositories and with different languages, to share a unified global style. The kpcc-design-system library is distributed on the node/npm ecosystem.
