@@ -53,10 +53,10 @@ gulp.task('compile:js', () => {
     .pipe(gulp.dest('./dist/scripts'));
 });
 
-gulp.task('copy:images', () => {
-  return gulp.src('./src/images/*')
-    .pipe(gulp.dest('./dist/images'));
-});
+// gulp.task('copy:images', () => {
+//   return gulp.src('./src/images/*')
+//     .pipe(gulp.dest('./dist/images'));
+// });
 
 gulp.task('build:sprite', () => {
   return gulp.src('./src/images/**/*.svg')
@@ -80,7 +80,7 @@ gulp.task('clean', () => {
 //// MASTER TASKS
 
 gulp.task('compile', (cb) => {
-  return runSequence('clean', 'build:sass', 'compile:css', 'build:js', 'compile:js', 'copy:images', 'build:sprite', cb);
+  return runSequence('clean', 'build:sass', 'compile:css', 'build:js', 'compile:js', 'build:sprite', cb);
 });
 
 
