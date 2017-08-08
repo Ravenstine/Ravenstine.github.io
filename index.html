@@ -393,6 +393,17 @@
           </figure>
         </xmp>
 
+        <h3>Figure - Fallback</h3>
+        <description>
+          You can optionally add a fallback image by including a second background-image in the `o-figure__img` style attribute.  Provided is a KPCC fallback image, but the fallback can be easily set to something else.  When no fallback image is provided, and the main image fails, the final fallback is a light-grey box.
+        </description>
+        <hr>
+        <xmp class="c-well">
+          <figure class="o-figure o-figure--widescreen">
+            <img class="o-figure__img" style="background-image: url(http://invalid.image/shouldntseethis.jpg); background-image: url(/dist/images/fallback.png);">
+          </figure>
+        </xmp>
+
         <h3>Media - Block</h3>
         <hr>
         <xmp class="c-well">

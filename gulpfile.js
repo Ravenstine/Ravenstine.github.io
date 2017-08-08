@@ -72,6 +72,11 @@ gulp.task('build:sprite', () => {
     .pipe(gulp.dest('./dist/images'))
 });
 
+gulp.task('copy:images', () => {
+  return gulp.src(['./src/images/**/*.jpg','./src/images/**/*.png'])
+    .pipe(gulp.dest('./dist/images'));
+});
+
 gulp.task('clean', () => {
   return del(['./dist/**/*']);
 });
@@ -80,18 +85,18 @@ gulp.task('clean', () => {
 //// MASTER TASKS
 
 gulp.task('compile', (cb) => {
-  return runSequence('clean', 'build:sass', 'compile:css', 'build:js', 'compile:js', 'build:sprite', cb);
+  return runSequence('clean', 'build:sass', 'compile:css', 'build:js', 'compile:js', 'build:sprite', 'copy:images', cb);
 });
 
 
 //// SERVE DOCUMENTATION
-gulp.task('serve', ['build:sass', 'build:js', 'build:sprite'], () => {
+gulp.task('serve', ['build:sass', 'build:js', 'build:sprite', 'copy:images'], () => {
   browserSync.init({
     server: "./"
   });
   gulp.watch(['./src/styles/**/*.sass', './src/styles/**/*.scss'], ['build:sass']);
   gulp.watch('./src/scripts/*.js', ['build:js']);
-  gulp.watch('./src/images/*.svg').on('change', browserSync.reload);
+  gulp.watch('./src/images/*').on('change', browserSync.reload);
   gulp.watch('./documentation/*').on('change', browserSync.reload);
   gulp.watch('./index.html').on('change', browserSync.reload);
 });
