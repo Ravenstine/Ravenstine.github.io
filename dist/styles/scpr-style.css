@@ -689,6 +689,7 @@ button {
 .o-figure__img {
   display: block;
   box-sizing: border-box;
+  background-color: #E8E8E8;
   background-size: cover;
   background-position: center;
   height: 0px;
@@ -1694,16 +1695,44 @@ button {
 .o-footer {
   background-color: #212121;
   color: #FFFFFF;
-  padding: 30px 3.16742%; }
+  padding: 30px 42px; }
   @media (max-width: 480px) {
     .o-footer {
-      padding: 30px 1.58371%; } }
+      padding: 30px 21px; } }
+  .o-footer__head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media (max-width: 1024px) {
+      .o-footer__head {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+  .o-footer__call-to-action {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    @media (max-width: 1024px) {
+      .o-footer__call-to-action {
+        margin-top: 15px;
+        max-width: 100%;
+        width: 100%; } }
   .o-footer__logo {
     height: 24px;
     width: 167px; }
-  @media (max-width: 1024px) {
-    .o-footer__tagline {
-      display: none; } }
+  .o-footer__tagline {
+    display: block;
+    margin-top: 5px; }
+    @media (max-width: 1024px) {
+      .o-footer__tagline {
+        display: none; } }
   .o-footer__nav {
     margin: 30px 0 60px; }
     .o-footer__nav--expanded {
@@ -1717,12 +1746,18 @@ button {
         .o-footer__nav--compact {
           display: block;
           margin-bottom: 30px; } }
+  .o-footer__partners {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   @media (max-width: 896px) {
     .o-footer__partner {
-      margin-bottom: 0.5rem; } }
+      margin-bottom: 8px; } }
   @media (max-width: 896px) {
     .o-footer__partner-label {
       display: block;
-      margin-bottom: 0.5rem; } }
+      margin-bottom: 8px; } }
   .o-footer__partner-logo {
     height: 20px; }

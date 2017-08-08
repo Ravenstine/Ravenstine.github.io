@@ -35,6 +35,15 @@ require('kpcc-design-system');
 @import './node_modules/kpcc-design-system/src/css/index.sass';
 ```
 
+### Fonts
+
+Add these tags to your HEAD tag to include fonts.
+
+```
+<script src="https://use.typekit.net/cka2qre.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+```
+
 ### Using SVG images
 Images that are part of the kpcc-design-system project are available as one central SVG sprite with each image consisting of a SVG `<symbol>`. To use these images, you can use the SVG `xlink` attribute as follows:
 ```

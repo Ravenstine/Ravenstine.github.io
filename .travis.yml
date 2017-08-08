@@ -2,9 +2,7 @@ language: node_js
 before_install:
 - nvm install 4.2.3
 - npm install
-- npm install gulp-cli
-- npm run build
-script: gulp compile
+script: npm run compile
 deploy:
   provider: npm
   email: scprdev@scpr.org

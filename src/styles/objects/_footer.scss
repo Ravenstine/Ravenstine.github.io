@@ -7,10 +7,29 @@
 .o-footer {
   background-color: $color-gray-darkest;
   color: $color-white;
-  padding: $base-line-height $gutter;
+  padding: $base-line-height $gutter-in-pixels;
 
   @include media-max($media-mobile) {
-    padding: $base-line-height ($gutter / 2);
+    padding: $base-line-height ($gutter-in-pixels / 2);
+  }
+
+  &__head {
+      // align-items: center;
+      display: flex;
+      justify-content: space-between;
+      @include media-max($media-desktop) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+  }
+
+  &__call-to-action {
+    align-self: center;
+    @include media-max($media-desktop) {
+      margin-top: 15px;
+      max-width: 100%;
+      width: 100%;
+    }
   }
 
   &__logo {
@@ -19,6 +38,8 @@
   }
 
   &__tagline {
+    display: block;
+    margin-top: 5px;
     @include media-max($media-desktop) {
       display: none;
     }
@@ -47,16 +68,21 @@
     }
   }
 
+  &__partners {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__partner {
     @include media-max($media-tablet) {
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
     }
   }
 
   &__partner-label {
     @include media-max($media-tablet) {
       display: block;
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
     }
   }
 

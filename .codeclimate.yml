@@ -4,7 +4,7 @@ engines:
     enabled: true
     config:
       languages:
-      - javascript
+        - javascript
   rubocop:
     enabled: true
   eslint:
@@ -31,12 +31,12 @@ engines:
     enabled: true
 ratings:
   paths:
-  - src/**
-  - "**.js"
-  - "**.jsx"
+    - src/**
+    - "**.js"
+    - "**.jsx"
 exclude_paths:
-- build/**/*
-- documentation/**/*
-- public/**/*
-- _site/**/*
-- src/css/util/modular-scale/*
+  - dist/**/*
+  - documentation/**/*
+  - public/**/*
+  - _site/**/*
+  - src/styles/util/modular-scale/*
