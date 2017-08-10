@@ -148,6 +148,8 @@ button {
     font-weight: 500; }
   .b-text--bold {
     font-weight: 700; }
+  .b-text--muted {
+    color: #898989; }
   .b-text--uppercase {
     text-transform: uppercase; }
   .b-text--large {

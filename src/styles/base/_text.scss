@@ -24,6 +24,10 @@
     font-weight: 700;
   }
 
+  &--muted {
+    color: $color-gray;
+  }
+
   &--uppercase {
     text-transform: uppercase;
   }
