@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SCPR/kpcc-style.git"
+    "url": "git+https://github.com/SCPR/kpcc.style.git"
   },
   "author": "Southern California Public Radio",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/SCPR/kpcc-style/issues"
+    "url": "https://github.com/SCPR/kpcc.style/issues"
   },
-  "homepage": "https://github.com/SCPR/kpcc-style#readme",
+  "homepage": "https://github.com/SCPR/kpcc.style#readme",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "babel-preset-es2015": "^6.18.0",

@@ -1,5 +1,5 @@
-[![Code Climate](https://codeclimate.com/github/SCPR/kpcc-style/badges/gpa.svg)](https://codeclimate.com/github/SCPR/kpcc-style)
-[![Build Status](https://travis-ci.org/SCPR/kpcc-style.svg?branch=master)](https://travis-ci.org/SCPR/kpcc-style)
+[![Code Climate](https://codeclimate.com/github/SCPR/kpcc.style/badges/gpa.svg)](https://codeclimate.com/github/SCPR/kpcc.style)
+[![Build Status](https://travis-ci.org/SCPR/kpcc.style.svg?branch=master)](https://travis-ci.org/SCPR/kpcc.style)
 
 KPCC.style
 ==========
@@ -62,8 +62,8 @@ Anyone at KPCC can contribute improvements to kpcc.style. Making changes/improve
 
 To get kpcc.style up and running for local development:
 
-1. clone the repo to your machine: `git clone git@github.com:SCPR/kpcc-style.git`
-2. `cd` into the `kpcc-style` directory.
+1. clone the repo to your machine: `git clone git@github.com:SCPR/kpcc.style.git`
+2. `cd` into the `kpcc.style` directory.
 3. Run `npm install` to install javascript dependencies.
 4. To get the documentation site running locally, run `npm run serve` and navigate to `http://localhost:3001`.
 
@@ -83,13 +83,13 @@ Adding a new CSS pattern to the design system looks something like:
 kpcc.style uses Travis CI to test builds, and also can publish passing builds to npm automatically using git tags and releases. When you're ready to release a new version of the design system, follow these steps:
 
 1. Make sure the changes that make up your release have been merged into `master`.
-2. Update the project's version number in `package.json` (https://github.com/SCPR/kpcc-style/blob/master/package.json#L3).
+2. Update the project's version number in `package.json` (https://github.com/SCPR/kpcc.style/blob/master/package.json#L3).
 3. Commit the update to the `package.json` file.
 4. On `master`, create a new tag and give it a brief description, e.g.: `git tag -a v1.4 -m "my version 1.4"`.
 5. Push the tag to Github: `git push origin v1.4`.
 6. The push to Github will kick off a new build on Travis CI. Once that succeeds, Travis should automatically publish the new version to npm.
-7. Verify that your new version has published to npm: https://www.npmjs.com/package/kpcc-style.
-8. Create a new Release in Github that corresponds to your tag: https://github.com/SCPR/kpcc-style/releases/new
+7. Verify that your new version has published to npm: https://www.npmjs.com/package/kpcc.style.
+8. Create a new Release in Github that corresponds to your tag: https://github.com/SCPR/kpcc.style/releases/new
 
 ## Running the design system documentation
 
