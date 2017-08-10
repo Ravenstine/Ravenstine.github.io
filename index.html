@@ -12,7 +12,8 @@
 
     <main>
 
-      <h1><svg class="o-footer__logo b-icon--left"><use class="" xlink:href="/dist/images/scpr-sprite.svg#logo_kpcc-black"/></svg> Design System</h1>
+      <h1 class="b-heading b-heading--h3"><svg class="o-footer__logo b-icon--left"><use class="" xlink:href="/dist/images/scpr-sprite.svg#logo_kpcc-black"/></svg> Style</h1>
+      <p class="b-text b-text--light">A basic CSS starter kit for KPCC web products.</p>
 
       <section id="base">
         <h2 class="b-heading--bold">Base</h2>
@@ -233,7 +234,7 @@
         </xmp>
 
         <h3>Nav</h3>
-        <description>
+        <description class="b-text b-text--light">
           A simple nav menu with hover effects.
         </description>
         <hr>
@@ -292,6 +293,45 @@
           </aside>
         </xmp>
 
+        <h3>Figure - Widescreen</h3>
+        <description class="b-text b-text--light">
+          Figures are implemented using normal HTML5 figure elements, except they use zero-height, padding, and a background-image property to achieve nice cropping with minimal markup.  Image tags should be used with both the source and the background-image as an inline style in order to make sure the images are recognized by crawlers.  This is a good implementation because it allows for the most adaptive resizing.
+        </description>
+        <hr>
+        <xmp class="c-well">
+          <figure class="c-figure c-figure--widescreen">
+            <img class="c-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
+          </figure>
+        </xmp>
+
+        <h3>Figure - Emphasized</h3>
+        <hr>
+        <xmp class="c-well">
+          <figure class="c-figure c-figure--widescreen c-figure--emphasized">
+            <img class="c-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
+          </figure>
+        </xmp>
+
+        <h3>Figure - Caption</h3>
+        <hr>
+        <xmp class="c-well">
+          <figure class="c-figure c-figure--widescreen">
+            <img class="c-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
+            <figcaption class="c-figure__caption">This is a caption. <span class="c-figure__attribution">Some guy/KPCC</span></figcaption>
+          </figure>
+        </xmp>
+
+        <h3>Figure - Fallback</h3>
+        <description class="b-text b-text--light">
+          You can optionally add a fallback image by including a second background-image in the `c-figure__img` style attribute.  Provided is a KPCC fallback image, but the fallback can be easily set to something else.  When no fallback image is provided, and the main image fails, the final fallback is a light-grey box.
+        </description>
+        <hr>
+        <xmp class="c-well">
+          <figure class="c-figure c-figure--widescreen">
+            <img class="c-figure__img" style="background-image: url(http://invalid.image/shouldntseethis.jpg); background-image: url(/dist/images/fallback.png);">
+          </figure>
+        </xmp>
+
         <h3>Well - Default</h3>
         <hr>
         <xmp class="c-well">
@@ -342,7 +382,7 @@
         </xmp>
 
         <h3>Well - Dismissable</h3>
-        <description>
+        <description class="b-text b-text--light">
           A well that can be dismissed by a user, with the option to set a cookie so the well is permanently hidden if a user dismisses it or views it a certain number of times.
         </description>
         <hr>
@@ -365,51 +405,12 @@
 
         <h2 class="b-heading--bold">Objects</h2>
 
-        <h3>Figure - Widescreen</h3>
-        <description>
-          Figures are implemented using normal HTML5 figure elements, except they use zero-height, padding, and a background-image property to achieve nice cropping with minimal markup.  Image tags should be used with both the source and the background-image as an inline style in order to make sure the images are recognized by crawlers.  This is a good implementation because it allows for the most adaptive resizing.
-        </description>
-        <hr>
-        <xmp class="c-well">
-          <figure class="o-figure o-figure--widescreen">
-            <img class="o-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
-          </figure>
-        </xmp>
-
-        <h3>Figure - Emphasized</h3>
-        <hr>
-        <xmp class="c-well">
-          <figure class="o-figure o-figure--widescreen o-figure--emphasized">
-            <img class="o-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
-          </figure>
-        </xmp>
-
-        <h3>Figure - Caption</h3>
-        <hr>
-        <xmp class="c-well">
-          <figure class="o-figure o-figure--widescreen">
-            <img class="o-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
-            <figcaption class="o-figure__caption">This is a caption. <span class="o-figure__attribution">Some guy/KPCC</span></figcaption>
-          </figure>
-        </xmp>
-
-        <h3>Figure - Fallback</h3>
-        <description>
-          You can optionally add a fallback image by including a second background-image in the `o-figure__img` style attribute.  Provided is a KPCC fallback image, but the fallback can be easily set to something else.  When no fallback image is provided, and the main image fails, the final fallback is a light-grey box.
-        </description>
-        <hr>
-        <xmp class="c-well">
-          <figure class="o-figure o-figure--widescreen">
-            <img class="o-figure__img" style="background-image: url(http://invalid.image/shouldntseethis.jpg); background-image: url(/dist/images/fallback.png);">
-          </figure>
-        </xmp>
-
         <h3>Media - Block</h3>
         <hr>
         <xmp class="c-well">
           <div class="o-media o-media--block">
-            <figure class="o-media__figure o-figure o-figure--four-by-three o-figure--emphasized">
-              <img class="o-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
+            <figure class="o-media__figure c-figure c-figure--four-by-three c-figure--emphasized">
+              <img class="c-figure__img" src="http://placehold.it/640x480" style="background-image: url(http://placehold.it/640x480);">
             </figure>
             <div class="o-media__content">
               <h6 class="o-media__overline o-media__overline--block">Overline Ipsum</h6>
@@ -425,8 +426,8 @@
         <hr>
         <xmp class="c-well">
           <div class="o-media o-media--horizontal o-media--sm">
-            <figure class="o-media__figure o-figure o-figure--four-by-three">
-              <img class="o-figure__img" src="http://placehold.it/450x338" style="background-image: url(http://placehold.it/450x338);">
+            <figure class="o-media__figure c-figure c-figure--four-by-three">
+              <img class="c-figure__img" src="http://placehold.it/450x338" style="background-image: url(http://placehold.it/450x338);">
             </figure>
             <h4 class="o-media__headline o-media__headline--h5"><a href="#">Related headline ipsum sit amet dolor quando nonumy</a></h4>
           </div>
@@ -450,8 +451,8 @@
                 Headline ipsum sit amet dolor quando nonumy quaerend tortor
               </a>
             </h3>
-            <figure class="o-media__figure o-figure o-figure--widescreen">
-              <img class="o-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
+            <figure class="o-media__figure c-figure c-figure--widescreen">
+              <img class="c-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
             </figure>
             <div class="o-media__teaser">Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend.
               <div class="o-media__meta">
@@ -476,8 +477,8 @@
                 Headline ipsum sit amet dolor quando nonumy quaerend tortor
               </a>
             </h3>
-            <figure class="o-media__figure o-figure o-figure--widescreen">
-              <img class="o-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
+            <figure class="o-media__figure c-figure c-figure--widescreen">
+              <img class="c-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
             </figure>
             <div class="o-media__teaser">Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend.
               <div class="o-media__meta">
@@ -517,8 +518,8 @@
                 Headline ipsum sit amet dolor quando nonumy quaerend tortor
               </a>
             </h3>
-            <figure class="o-media__figure o-figure o-figure--widescreen">
-              <img class="o-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
+            <figure class="o-media__figure c-figure c-figure--widescreen">
+              <img class="c-figure__img" src="http://placehold.it/298x180" style="background-image: url(http://placehold.it/298x180);">
             </figure>
             <div class="o-media__teaser">Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend. In purus tortor, tincidunt consequat dolor vitae, commodo sagittis odio.Teaser ipsum sit amet dolor quando nonumy quaerend.
               <div class="o-media__meta">
@@ -608,8 +609,8 @@
         <hr>
         <xmp class="c-well">
           <div class="o-media o-media--lg">
-            <figure class="o-media__figure o-figure o-figure--widescreen">
-              <img class="o-figure__img" src="http://placehold.it/1024x576" style="background-image: url(http://placehold.it/1024x576);">
+            <figure class="o-media__figure c-figure c-figure--widescreen">
+              <img class="c-figure__img" src="http://placehold.it/1024x576" style="background-image: url(http://placehold.it/1024x576);">
             </figure>
             <h6 class="o-media__overline">Overline Ipsum</h6>
             <h3 class="o-media__headline o-media__headline--h2">
@@ -623,8 +624,8 @@
         <hr>
         <xmp class="c-well">
           <div class="o-media o-media--lg">
-            <figure class="o-media__figure o-figure o-figure--widescreen">
-              <img class="o-figure__img" src="http://placehold.it/1024x576" style="background-image: url(http://placehold.it/1024x576);">
+            <figure class="o-media__figure c-figure c-figure--widescreen">
+              <img class="c-figure__img" src="http://placehold.it/1024x576" style="background-image: url(http://placehold.it/1024x576);">
             </figure>
             <h6 class="o-media__overline">Overline Ipsum</h6>
             <h1 class="o-media__headline o-media__headline--h1">
@@ -639,7 +640,7 @@
 
 
         <h3>Masthead - Full</h3>
-        <description>
+        <description class="b-text b-text--light">
           On small screens, this masthead uses checkboxes to maintain the state of the menu.  This works without JavaScript.  The sizing and layout of the sections are fairly generic, so you will want to override the flex display settings on them depending on what you are displaying.
         </description>
         <hr>

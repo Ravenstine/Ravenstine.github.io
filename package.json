@@ -1,5 +1,5 @@
 {
-  "name": "kpcc-design-system",
+  "name": "kpcc.style",
   "version": "4.0.0",
   "description": "Product Design System for KPCC (Southern California Public Radio).",
   "main": "src/scripts/index.js",
@@ -24,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SCPR/kpcc-design-system.git"
+    "url": "git+https://github.com/SCPR/kpcc-style.git"
   },
   "author": "Southern California Public Radio",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/SCPR/kpcc-design-system/issues"
+    "url": "https://github.com/SCPR/kpcc-style/issues"
   },
-  "homepage": "https://github.com/SCPR/kpcc-design-system#readme",
+  "homepage": "https://github.com/SCPR/kpcc-style#readme",
   "devDependencies": {
     "autoprefixer": "^6.6.0",
     "babel-preset-es2015": "^6.18.0",

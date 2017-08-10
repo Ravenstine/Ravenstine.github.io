@@ -666,27 +666,27 @@ button {
 .js--hidden {
   display: none; }
 
-.o-figure {
+.c-figure {
   box-sizing: border-box;
   display: block;
   max-width: 100%; }
 
-.o-figure--widescreen .o-figure__img {
+.c-figure--widescreen .c-figure__img {
   padding-top: 56.24993%; }
 
-.o-figure--four-by-three .o-figure__img {
+.c-figure--four-by-three .c-figure__img {
   padding-top: 75.00019%; }
 
-.o-figure--cinematic .o-figure__img {
+.c-figure--cinematic .c-figure__img {
   padding-top: 42.55319%; }
 
-.o-figure--portrait .o-figure__img {
+.c-figure--portrait .c-figure__img {
   padding-top: 149.25373%; }
 
-.o-figure--emphasized .o-figure__img {
+.c-figure--emphasized .c-figure__img {
   border-bottom: 4px solid #F87E21; }
 
-.o-figure__img {
+.c-figure__img {
   display: block;
   box-sizing: border-box;
   background-color: #E8E8E8;
@@ -695,13 +695,13 @@ button {
   height: 0px;
   width: 100%; }
 
-.o-figure__caption {
+.c-figure__caption {
   color: #898989;
   display: inline-block;
   font-size: 12px;
   margin-top: 13px; }
 
-.o-figure__attribution {
+.c-figure__attribution {
   color: #31ABD4;
   display: inline-block;
   font-style: normal;
