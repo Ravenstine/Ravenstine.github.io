@@ -21,6 +21,7 @@ $o-mast-logo-mobile-width: 107px
   position: relative
 
   .o-mast__logo
+    flex-shrink: 0
     float: left
     padding: 9.6px
     height: 22px
@@ -37,6 +38,7 @@ $o-mast-logo-mobile-width: 107px
       @media (max-width: $media-tablet)
         height: 16px
         width: 107px
+    a +clearfix
 
   .o-mast__section-heading
     color: $color-gray
@@ -111,6 +113,7 @@ $o-mast-logo-mobile-width: 107px
         align-self: flex-end
         background: $color-white
         border-color: $color-secondary
+        margin: 0
         transition: width 0.5s
         width: 0%
         &::placeholder
@@ -137,6 +140,9 @@ $o-mast-logo-mobile-width: 107px
   .o-mast__menu-toggler
     align-items: center
     user-select: none
+
+  .o-mast__menu-toggler-caption
+    margin-left: 5px
 
   .o-mast__menu-icon--opened
     margin-right: 3.2px

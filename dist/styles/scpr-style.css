@@ -997,6 +997,8 @@ button {
   height: 60px;
   position: relative; }
   .o-mast .o-mast__logo {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     float: left;
     padding: 9.6px;
     height: 22px;
@@ -1091,6 +1093,7 @@ button {
             align-self: flex-end;
         background: #FFFFFF;
         border-color: #31ABD4;
+        margin: 0;
         -webkit-transition: width 0.5s;
         transition: width 0.5s;
         width: 0%; }
@@ -1133,6 +1136,8 @@ button {
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none; }
+  .o-mast .o-mast__menu-toggler-caption {
+    margin-left: 5px; }
   .o-mast .o-mast__menu-icon--opened {
     margin-right: 3.2px; }
   .o-mast .o-mast__pipe {
