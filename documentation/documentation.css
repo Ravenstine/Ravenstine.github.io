@@ -1,0 +1,95 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 960px;
+}
+
+#d-header {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 960px;  
+}
+
+#d-header h1 {
+  margin-bottom: 10px;
+}
+
+#d-nav {
+  display: block;
+  float: left;
+  width: 10%;
+}
+
+#d-content {
+  float: right;
+  width: 80%;
+}
+
+#d-content xmp {  
+  margin-bottom: 100px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: scroll;
+}
+
+// #d-content section > h3:not(:nth-child(1)){
+//   margin-top: 100px;
+// }
+
+#d-content > section > hr {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+#d-content > section {
+  // margin-bottom: 50px;
+  // margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#d-content > h1 {
+  margin-bottom: 50px;
+}
+
+#d-content section > h2 {
+  margin-bottom: 25px;
+}
+
+description + h3.b-heading {
+  margin-top: 100px;
+}
+
+@media (max-width: 896px) {
+  #d-nav {
+    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    float: initial;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+  }
+  #d-nav a {
+    float: left;
+    text-align: center;
+    width: initial;
+  }
+  #d-content {
+    clear: both;
+    float: initial;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+

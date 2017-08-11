@@ -15,8 +15,7 @@
     <main>
 
       <nav id="d-nav" class="c-nav c-nav--right">
-        <ul>
-        </ul>
+
       </nav>
  
       <div id="d-content">
@@ -28,7 +27,7 @@
           <xmp class="d-c-code c-well">
             <h1 class="b-heading b-heading--h1">I am an H1 heading</h1>
             <h2 class="b-heading b-heading--h2">I am an H2 heading</h2>
-            <h3 class="b-heading b-heading--h3 b-text--muted">I am an H3 heading</h3>
+            <h3 class="b-heading b-heading--h3">I am an H3 heading</h3>
             <h4 class="b-heading b-heading--h4">I am an H4 heading</h4>
             <h5 class="b-heading b-heading--h5">I am an H5 heading</h5>
             <h6 class="b-heading b-heading--h6">I am an H6 heading</h6>
@@ -146,6 +145,41 @@
           <hr>
           <xmp class="d-c-code c-well">
             <div class="l-container l-container--xl">I am an extra large container</div>
+          </xmp>
+
+          <h3 class="b-heading b-heading--h3 b-text--muted">Grid</h3>
+          <description class="b-text b-text--light">
+            KPCC.style does not come with a grid system.  In most cases, you should probably use Flexbox(or CSS grids if you're really daring).  If you really, really need an old-school grid system, there are plenty of [grid systems](http://flexboxgrid.com/) you can include in your project.
+          </description>
+
+          <h3 class="b-heading b-heading--h3 b-text--muted">Columns</h3>
+          <description class="b-text b-text--light">
+            Many of KPCC's new layouts display content in 3 columns.  A challenge we had was in having 3 column layouts that are responsive, allowing page components to interleave(i.e. have ads from the right aside display within the article body on mobile), and do this without JavaScript.
+
+            We finally landed on a CSS pattern to achieve this, which we made into a Sass mixin that you can use like so:
+          </description>
+          <xmp class="c-well">
+            .custom-layout-container {
+              +columns($min-screen-size: $media-tablet, $left-size: 10%, $center-size: 60%, $right-size: 20%)
+            }
+          </xmp>
+          <description class="b-text b-text--light">
+            That defines how each column should be sized, and what the minimum screen size should be for displaying content in 3 columns instead of 1.
+
+            One caveat is that for the 3 columns to work, content must be grouped in a specific order(from top to bottom, left, right, then center).  When there's a single column, the container uses `display: flex` which allows you to arbitrarily order individual items using the CSS `order` property.
+
+            Left side items are absolute positioned, so if you want multiple columns on the left, you need to manually position them so they don't overlap.
+          </description>
+          <xmp class="c-well">
+            <div class="custom-layout-container">
+              <aside class="l-column-left">LEFT</aside>
+              <aside class="l-column-right">right</aside>
+              <aside class="l-column-right">right</aside>
+              <aside class="l-column-right">right</aside>
+              <article class="l-column-center">CENTER</article>
+              <article class="l-column-center">CENTER</article> 
+              <article class="l-column-center">CENTER</article> 
+            </div>
           </xmp>
 
         </section>
